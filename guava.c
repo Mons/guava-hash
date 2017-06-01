@@ -10,8 +10,8 @@ static const double
 	D   = 0x1.0p31;
 
 unsigned guava(long state, unsigned int buckets) {
-	unsigned candidate = 0;
-	unsigned next;
+	int candidate = 0;
+	int next;
 	while (1) {
 		state = K * state + 1;
 		next = (int) ( (double) (candidate + 1) / ( (double)( (int)( (long unsigned) state >> 33 ) + 1 ) / D ) );
