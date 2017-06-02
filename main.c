@@ -70,7 +70,7 @@ _test tests[] = {
 
 int main () {
 	int i,cnt = sizeof(tests)/sizeof(tests[0]);
-	unsigned ret;
+	int ret;
 	printf("%d..%d\n",cnt,cnt);
 	for (i = 0; i< cnt; i++) {
 		ret = guava( tests[i].in, tests[i].cap );

@@ -9,7 +9,7 @@ static const long
 static const double
 	D   = 0x1.0p31;
 
-unsigned guava(long state, unsigned int buckets) {
+int guava(long state, unsigned int buckets) {
 	int candidate = 0;
 	int next;
 	while (1) {
