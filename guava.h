@@ -4,6 +4,6 @@
 
 typedef uint64_t U64;
 
-extern int guava(long, unsigned);
+extern int guava(long long, unsigned int);
 
 #endif
