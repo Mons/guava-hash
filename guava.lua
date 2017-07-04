@@ -3,7 +3,7 @@ local pcall = _G.pcall
 module ("guava")
 
 ffi.cdef [[
-	int guava(long, unsigned);
+	int guava(long long, unsigned int);
 ]]
 
 local libguava
